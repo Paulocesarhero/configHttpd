@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplos básicos HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Registro de aspirantes</h1>
+    </header>
+    <br><br>
+    <form action="mailto:contacto@minegocio.com" method="get">
+        <label for="txt_nombre">* Nombre:</label>
+        <input type="text" id="txt_nombre" maxlength="50" required>
+        <br>
+        <label for="txt_apellidopat">* Apellido Paterno:</label>
+        <input type="text" id="txt_apellidopat" maxlength="50" required>
+        <br>
+        <label for="txt_apellidomat">* Apellido Materno:</label>
+        <input type="text" id="txt_apellidomat" maxlength="50" required>
+        <br>
+        <p>Sexo:
+            <input type="radio" name="sexo" id="rad_sexo_m" value="M" />
+            <label for="rad_sexo_m">Masculino</label>
+            <input type="radio" name="sexo" id="rad_sexo_f" value="F"/>
+            <label for="rad_sexo_f">Femenino</label>
+        </p>
+        <label for="txt_fechanac">Fecha de Nacimiento:</label>
+        <input type="date" id="txt_fechanac">
+        <br>
+        <label for="text_correo">Correo Electronico:</label>
+        <input type="email" id="text_correo" maxlength="100"/>
+        <br>
+        <label for="cbx_carrera">Carrera:</label>
+        <select id="cbx_carrera">
+            <option>Ingeniería de Software</option>
+            <option>Tecnologías computacionales</option>
+            <option>Redes</option>
+        </select>
+        <br><br>
+        <input type="checkbox" id="chk_terminos">
+        <label for="chk_terminos">Acepto los términos y condiciones de uso de la plataforma</label>
+        <br>
+        <br>
+        <input type="submit" value="Enviar"/>
+    </form>
+    <br>
+    <br>
+    <a href="../index.html">Regresar</a>
+</body>
+</html>
